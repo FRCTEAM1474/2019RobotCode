@@ -12,16 +12,16 @@ public static Joystick NonDriverStick = new Joystick(1);
 
 static Button CargoInFastButton = new JoystickButton(DriverStick, 1);
 static Button CargoOutFastButton = new JoystickButton(DriverStick, 2);
-static Button CargoInSlowButton = new JoystickButton(DriverStick, 3);
-static Button CargoOutSlowButton = new JoystickButton(DriverStick, 4);
+static Button CargoInSlowButton = new JoystickButton(NonDriverStick, 1);
+static Button CargoOutSlowButton = new JoystickButton(NonDriverStick, 2);
 
-static Button HatchLockedButton = new JoystickButton(DriverStick, 5);
-static Button HatchLooseButton = new JoystickButton(DriverStick, 6);
+static Button HatchLockedButton = new JoystickButton(DriverStick, 3);
+static Button HatchLooseButton = new JoystickButton(DriverStick, 4);
 
-static Button FlashingGoldLEDButton = new JoystickButton(NonDriverStick, 1);
-static Button FlashingBlueLEDButton = new JoystickButton(NonDriverStick, 2);
-static Button FlashingRedLEDButton = new JoystickButton(NonDriverStick, 3);
-static Button FlashingWhiteLEDButton = new JoystickButton(NonDriverStick, 4);
+static Button FlashingGoldLEDButton = new JoystickButton(NonDriverStick, 3);
+static Button FlashingBlueLEDButton = new JoystickButton(NonDriverStick, 4);
+static Button FlashingRedLEDButton = new JoystickButton(NonDriverStick, 5);
+static Button FlashingWhiteLEDButton = new JoystickButton(NonDriverStick, 6);
 
-static Button ShiftingButton = new JoystickButton(DriverStick, 7);
+static Button ShiftingButton = new JoystickButton(DriverStick, 5);
 }
