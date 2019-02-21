@@ -25,6 +25,7 @@ public class Robot extends IterativeRobot
 	@Override
 	public void robotInit() {
 		System.out.println("Robot INIT");
+		
 		DriveTrain = new DriveTrain();
 		CargoConveyer = new CargoConveyer();
 		Hatch = new Hatch();
@@ -32,6 +33,8 @@ public class Robot extends IterativeRobot
 		OI = new OI();
 		compressor = new Compressor();
 
+		CameraServer.getInstance().startAutomaticCapture();
+		CameraServer.getInstance().startAutomaticCapture();
 		CameraServer.getInstance().startAutomaticCapture();
 	
 	}
