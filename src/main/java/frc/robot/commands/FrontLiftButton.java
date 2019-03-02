@@ -1,13 +1,11 @@
 package frc.robot.commands;
 
+import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
 import edu.wpi.first.wpilibj.command.Command;
-import frc.robot.Robot;
-import frc.robot.subsystems.CargoConveyer;
+import frc.robot.subsystems.HABClimb;
 
-public class CargoInSlow extends Command {
-
-    public CargoInSlow() {
-        requires(Robot.CargoConveyer);
+public class FrontLiftButton extends Command{
+    public FrontLiftButton() {
     }
 
     // Called just before this Command runs the first time
@@ -19,7 +17,7 @@ public class CargoInSlow extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-        CargoConveyer.CargoMC.set(0.25);
+        HABClimb.FrontLift.set(Value.kForward);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -30,8 +28,8 @@ public class CargoInSlow extends Command {
 
     // Called once after isFinished returns true
     @Override
-    protected void end() {
-        CargoConveyer.CargoMC.set(0.0);
+    protected void end(){
+        HABClimb.FrontLift.set(Value.kReverse);
     }
 
     // Called when another command which requires one or more of the same

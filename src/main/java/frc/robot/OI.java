@@ -21,6 +21,9 @@ public OI()
     RobotMap.FlashingWhiteLEDButton.whileHeld(new FlashingWhiteLED());
 
     RobotMap.ShiftingButton.toggleWhenPressed(new ShiftingButton());
+
+    RobotMap.FrontLiftButton.toggleWhenPressed(new FrontLiftButton());
+    RobotMap.BackLiftButton.toggleWhenPressed(new BackLiftButton());
 }
 
 }
