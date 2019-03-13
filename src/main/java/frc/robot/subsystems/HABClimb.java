@@ -9,7 +9,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 public class HABClimb extends Subsystem{
 
     public static DoubleSolenoid FrontLift = new DoubleSolenoid(2, 3);
-    public static DoubleSolenoid BackLift = new DoubleSolenoid(4, 5);
+    public static DoubleSolenoid BackLift = new DoubleSolenoid(6, 7);
 	
 	public static Timer m_timer = new Timer();
 	
