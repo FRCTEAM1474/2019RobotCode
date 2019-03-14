@@ -24,6 +24,8 @@ public class DriveTrain extends Subsystem{
 	public static DifferentialDrive RobotDrive = new DifferentialDrive(m_left, m_right);
 
 	public static DoubleSolenoid Shifter = new DoubleSolenoid(0, 1);
+	public static DoubleSolenoid FrontLift = new DoubleSolenoid(2, 3);
+    public static DoubleSolenoid BackLift = new DoubleSolenoid(6, 7);
 	
 	public static Timer m_timer = new Timer();
 	

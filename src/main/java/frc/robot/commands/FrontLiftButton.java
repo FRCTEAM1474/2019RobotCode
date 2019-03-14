@@ -2,7 +2,7 @@ package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
 import edu.wpi.first.wpilibj.command.Command;
-import frc.robot.subsystems.HABClimb;
+import frc.robot.subsystems.DriveTrain;
 
 public class FrontLiftButton extends Command{
     public FrontLiftButton() {
@@ -17,7 +17,7 @@ public class FrontLiftButton extends Command{
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-        HABClimb.FrontLift.set(Value.kForward);
+        DriveTrain.FrontLift.set(Value.kForward);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -29,7 +29,7 @@ public class FrontLiftButton extends Command{
     // Called once after isFinished returns true
     @Override
     protected void end(){
-        HABClimb.FrontLift.set(Value.kReverse);
+        DriveTrain.FrontLift.set(Value.kReverse);
     }
 
     // Called when another command which requires one or more of the same

@@ -17,7 +17,6 @@ public class Robot extends IterativeRobot
 	public static LEDLights LEDLights;
 	public static OI OI;
 	public static Compressor compressor;
-	public static HABClimb HABClimb;
 
 
 	Command m_autonomousCommand;
@@ -33,7 +32,6 @@ public class Robot extends IterativeRobot
 		LEDLights = new LEDLights();
 		OI = new OI();
 		compressor = new Compressor();
-		HABClimb = new HABClimb();
 
 		CameraServer.getInstance().startAutomaticCapture();
 		CameraServer.getInstance().startAutomaticCapture();
