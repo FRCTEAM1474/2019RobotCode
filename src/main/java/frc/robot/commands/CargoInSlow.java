@@ -19,7 +19,7 @@ public class CargoInSlow extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-        CargoConveyer.CargoMC.set(0.25);
+        CargoConveyer.CargoMC.set(.25);
     }
 
     // Make this return true when this Command no longer needs to run execute()

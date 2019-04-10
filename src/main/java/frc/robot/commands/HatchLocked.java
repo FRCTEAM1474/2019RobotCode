@@ -31,6 +31,7 @@ public class HatchLocked extends Command {
     @Override
     protected void end() {
         Hatch.HatchMC.set(0.0);
+        
     }
 
     // Called when another command which requires one or more of the same

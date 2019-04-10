@@ -2,10 +2,11 @@ package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.PWMTalonSRX;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.PWMVictorSPX;
 
 public class CargoConveyer extends Subsystem{
 	
-	public static PWMTalonSRX CargoMC = new PWMTalonSRX(4);
+	public static PWMVictorSPX CargoMC = new PWMVictorSPX(4);
 	
 	@Override
 	protected void initDefaultCommand() {

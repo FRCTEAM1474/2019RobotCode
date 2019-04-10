@@ -4,7 +4,12 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
-
+/**
+ * The RobotMap is a mapping from the ports sensors and actuators are wired into
+ * to a variable name. This provides flexibility changing wiring, makes checking
+ * the wiring easier and significantly reduces the number of magic numbers
+ * floating around.
+ */
 public class RobotMap {
 
 public static Joystick DriverStick = new Joystick(0);
@@ -25,6 +30,6 @@ static Button FlashingWhiteLEDButton = new JoystickButton(NonDriverStick, 6);
 
 static Button ShiftingButton = new JoystickButton(DriverStick, 5);
 
-static Button FrontLiftButton = new JoystickButton(DriverStick, 7);
-static Button BackLiftButton = new JoystickButton(DriverStick, 9);
+static Button frontLifterButton = new JoystickButton(DriverStick, 7);
+static Button backLifterButton = new JoystickButton(DriverStick, 9);
 }

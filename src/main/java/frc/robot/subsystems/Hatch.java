@@ -2,10 +2,13 @@ package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.PWMTalonSRX;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 public class Hatch extends Subsystem {
 
 	public static PWMTalonSRX HatchMC = new PWMTalonSRX(5);
+
+	
 
 	@Override
 	protected void initDefaultCommand() {
@@ -13,6 +16,9 @@ public class Hatch extends Subsystem {
 
 	}
 
+	@Override
+	public void periodic() {
+	}
 	public void HatchLocked() {
 	}
 

@@ -2,10 +2,12 @@ package frc.robot.commands;
 
 import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
 import edu.wpi.first.wpilibj.command.Command;
+import frc.robot.Robot;
+import frc.robot.RobotMap;
 import frc.robot.subsystems.DriveTrain;
 
-public class BackLiftButton extends Command{
-    public BackLiftButton() {
+public class backLifterButton extends Command{
+    public backLifterButton() {
     }
 
     // Called just before this Command runs the first time
@@ -17,7 +19,7 @@ public class BackLiftButton extends Command{
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-        DriveTrain.BackLift.set(Value.kForward);
+        DriveTrain.backLifter.set(Value.kForward);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -29,7 +31,7 @@ public class BackLiftButton extends Command{
     // Called once after isFinished returns true
     @Override
     protected void end(){
-        DriveTrain.BackLift.set(Value.kReverse);
+        DriveTrain.backLifter.set(Value.kReverse);
     }
 
     // Called when another command which requires one or more of the same
